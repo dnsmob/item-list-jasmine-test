@@ -30,7 +30,7 @@ Test.prototype = {
         }
     },
 
-    onAddItemClicked : function (event) {
+    onAddItemClicked : function () {
         // only process if there's a valid value in the field
         var copy = this.field.val ().trim ();
         if (copy && copy.length > 0) {
@@ -54,7 +54,7 @@ Test.prototype = {
     createDeleteButton : function () {
         // create delete button and remove hook
         var del = $ ('<button type="button">Delete</button>');
-        del.click (function (event) {
+        del.click (function () {
             var parent = del.parent ();
             this.removeStorage (parent.attr ('itemId'));
             parent.remove ();
@@ -90,7 +90,7 @@ Test.prototype = {
         if (count < 1) {
             this.total.text ('');
         } else if (count >= 1) {
-            this.total.text (count + (count == 1 ? ' item' : ' items') + ' in list');
+            this.total.text (count + (count === 1 ? ' item' : ' items') + ' in list');
         }
     }
 };
