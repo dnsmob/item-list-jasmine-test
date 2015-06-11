@@ -1,7 +1,7 @@
 describe ('Test TDD', function () {
 
     var js;
-    var field, button, list;
+    var field, button, list, total;
 
     beforeEach (function () {
         loadFixtures ('fixture.html');
