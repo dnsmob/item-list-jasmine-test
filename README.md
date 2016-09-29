@@ -1,4 +1,4 @@
-# item-list-jasmine-demo
+# item-list-jasmine-test
 
 from the checked out project terminal prompt    
 run ` npm install `    
